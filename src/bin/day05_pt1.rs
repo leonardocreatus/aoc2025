@@ -16,6 +16,7 @@ fn main() {
 
     let numbers: Vec<u64> = numbers.lines().map(|line| line.parse().unwrap()).collect();
     let mut count = 0;
+
     for number in numbers {
         let mut in_interval = false;
         for (a, b) in intervals.iter() {
